@@ -1,4 +1,4 @@
-module github.com/MinterTeam/minter-go-sdk
+module github.com/dkodnik/minter-go-sdk
 
 go 1.13
 
