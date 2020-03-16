@@ -29,7 +29,7 @@ func (a *Api) ValidatorsAtHeight(height int) ([]*ValidatorResult, error) {
 	if height > 0 {
 		params["height"] = strconv.Itoa(height)
 	}
-
+	params["perPage"] = 256
 	res, err := a.client.R().SetQueryParams(params).Get("/validators")
 	if err != nil {
 		return nil, err
